@@ -23,7 +23,7 @@ namespace AssertDemo.Tests.Equality
 
             var fullName = sut.Join("sarah", "smith");
 
-            Assert.That(fullName, Is.EqualTo("SARAH SMITH"));
+            Assert.That(fullName, Is.EqualTo("SARAH SMITH".ToLower()));
         }
 
 
@@ -34,7 +34,7 @@ namespace AssertDemo.Tests.Equality
 
             var fullName = sut.Join("Sarah", "Smith");
 
-            Assert.That(fullName, Is.EqualTo("Gentry Smith"));
+            Assert.That(fullName, !Is.EqualTo("Gentry Smith"));
         }        
     }
 }

@@ -18,7 +18,7 @@ namespace AssertDemo.Tests.Equality
 
         [Test]
         public void ShouldAddDoubles()
-        {
+            {
             var sut = new Calculator();
 
             var result = sut.AddDoubles(1.1, 2.2);

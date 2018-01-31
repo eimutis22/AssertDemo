@@ -12,16 +12,14 @@ namespace AssertDemo
 
         public double AddDoubles(double a, double b)
         {
-            return a + b;
+            return Math.Round(a + b, 5);
         }
 
 
         public int Divide(int value, int by)
         {
-            if (value > 100)
-            {
-                throw new ArgumentOutOfRangeException("by"); // bug for demo purposes
-            }
+            if (by == 0)
+                throw new DivideByZeroException();
 
             return value / by;
         }

@@ -25,7 +25,7 @@ namespace AssertDemo
             var rnd = new Random();
 
             var healthIncrease = rnd.Next(1, 101);
-
+    
             Health += healthIncrease;
         }
 
@@ -58,7 +58,9 @@ namespace AssertDemo
                 
                           // "Long Bow",
                            //"Staff Of Wonder"
-                      };            
+                      };
+
+            Weapons.Sort();
         }
     }
 }
