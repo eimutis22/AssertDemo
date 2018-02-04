@@ -21,6 +21,9 @@ namespace AssertDemo
             if (by == 0)
                 throw new DivideByZeroException();
 
+            if (value > 100)
+                throw new ArgumentOutOfRangeException();
+
             return value / by;
         }
     }
